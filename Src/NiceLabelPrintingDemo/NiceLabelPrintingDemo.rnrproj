@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>NiceLabel Printing</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <ProjectGuid>{fc52929e-d49d-4689-8f2f-9dc0a354fefd}</ProjectGuid>
+    <Name>NiceLabelPrintingDemo</Name>
+    <RootNamespace>NiceLabelPrintingDemo</RootNamespace>
+    <StartupObject>DirPartyTable (DirPartyTable.NiceLabelPrinting)</StartupObject>
+    <StartupType>Form</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Display Menu Items\" />
+    <Folder Include="EDT Integers\" />
+    <Folder Include="EDT Strings\" />
+    <Folder Include="Form Extensions\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Label Files\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\DirPartyTable_NiceLabelPrinting">
+      <SubType>Content</SubType>
+      <Name>DirPartyTable_NiceLabelPrinting</Name>
+      <Link>Classes\DirPartyTable_NiceLabelPrinting</Link>
+    </Content>
+    <Content Include="AxClass\NLPIntegrationParameters">
+      <SubType>Content</SubType>
+      <Name>NLPIntegrationParameters</Name>
+      <Link>Classes\NLPIntegrationParameters</Link>
+    </Content>
+    <Content Include="AxClass\NLPPrintDialog">
+      <SubType>Content</SubType>
+      <Name>NLPPrintDialog</Name>
+      <Link>Classes\NLPPrintDialog</Link>
+    </Content>
+    <Content Include="AxClass\NLPrinting">
+      <SubType>Content</SubType>
+      <Name>NLPrinting</Name>
+      <Link>Classes\NLPrinting</Link>
+    </Content>
+    <Content Include="AxEdt\NLPEDTPrinterId">
+      <SubType>Content</SubType>
+      <Name>NLPEDTPrinterId</Name>
+      <Link>EDT Strings\NLPEDTPrinterId</Link>
+    </Content>
+    <Content Include="AxEdt\NLPEDTPrinterName">
+      <SubType>Content</SubType>
+      <Name>NLPEDTPrinterName</Name>
+      <Link>EDT Strings\NLPEDTPrinterName</Link>
+    </Content>
+    <Content Include="AxEdt\NLPEDTQuantity">
+      <SubType>Content</SubType>
+      <Name>NLPEDTQuantity</Name>
+      <Link>EDT Integers\NLPEDTQuantity</Link>
+    </Content>
+    <Content Include="AxEdt\NLPEDTServiceURL">
+      <SubType>Content</SubType>
+      <Name>NLPEDTServiceURL</Name>
+      <Link>EDT Strings\NLPEDTServiceURL</Link>
+    </Content>
+    <Content Include="AxEdt\NLPEDTSubscriptionKey">
+      <SubType>Content</SubType>
+      <Name>NLPEDTSubscriptionKey</Name>
+      <Link>EDT Strings\NLPEDTSubscriptionKey</Link>
+    </Content>
+    <Content Include="AxEdt\NLPEDTTemplateId">
+      <SubType>Content</SubType>
+      <Name>NLPEDTTemplateId</Name>
+      <Link>EDT Strings\NLPEDTTemplateId</Link>
+    </Content>
+    <Content Include="AxEdt\NLPEDTTemplateName">
+      <SubType>Content</SubType>
+      <Name>NLPEDTTemplateName</Name>
+      <Link>EDT Strings\NLPEDTTemplateName</Link>
+    </Content>
+    <Content Include="AxEdt\NLPEDTTemplatePath">
+      <SubType>Content</SubType>
+      <Name>NLPEDTTemplatePath</Name>
+      <Link>EDT Strings\NLPEDTTemplatePath</Link>
+    </Content>
+    <Content Include="AxFormExtension\DirPartyTable.NiceLabelPrinting">
+      <SubType>Content</SubType>
+      <Name>DirPartyTable.NiceLabelPrinting</Name>
+      <Link>Form Extensions\DirPartyTable.NiceLabelPrinting</Link>
+    </Content>
+    <Content Include="AxForm\NLPIntegrationParameters">
+      <SubType>Content</SubType>
+      <Name>NLPIntegrationParameters</Name>
+      <Link>Forms\NLPIntegrationParameters</Link>
+    </Content>
+    <Content Include="AxLabelFile\NiceLabelPrintingDemo_en-US">
+      <SubType>Content</SubType>
+      <Name>NiceLabelPrintingDemo_en-US</Name>
+      <Link>Label Files\NiceLabelPrintingDemo_en-US</Link>
+    </Content>
+    <Content Include="AxMenuExtension\SystemAdministration.NiceLabelPrinting">
+      <SubType>Content</SubType>
+      <Name>SystemAdministration.NiceLabelPrinting</Name>
+      <Link>Menu Extensions\SystemAdministration.NiceLabelPrinting</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\NLPMenuItemParameters">
+      <SubType>Content</SubType>
+      <Name>NLPMenuItemParameters</Name>
+      <Link>Display Menu Items\NLPMenuItemParameters</Link>
+    </Content>
+    <Content Include="AxTable\NLPGeneralParameters">
+      <SubType>Content</SubType>
+      <Name>NLPGeneralParameters</Name>
+      <Link>Tables\NLPGeneralParameters</Link>
+    </Content>
+    <Content Include="AxTable\NLPPrinterParameters">
+      <SubType>Content</SubType>
+      <Name>NLPPrinterParameters</Name>
+      <Link>Tables\NLPPrinterParameters</Link>
+    </Content>
+    <Content Include="AxTable\NLPTemplateParameters">
+      <SubType>Content</SubType>
+      <Name>NLPTemplateParameters</Name>
+      <Link>Tables\NLPTemplateParameters</Link>
+    </Content>
+    <Content Include="NiceLabelPrintingDemo.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>NiceLabelPrintingDemo.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\NiceLabelPrintingDemo_en-US</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <Name>Newtonsoft.Json</Name>
+      <HintPath>C:\Users\Admin1cb3aac7bf\source\repos\NiceLabelPrintingDemo\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
